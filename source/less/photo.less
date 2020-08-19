@@ -1,0 +1,32 @@
+.photo__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: -4px;
+}
+
+.photo__img {
+  height: 120px;
+  margin: 4px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.01);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .photo__wrapper {
+    justify-content: center;
+  }
+
+  .photo__img {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}

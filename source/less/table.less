@@ -1,0 +1,179 @@
+.table {
+  width: 740px;
+  border-collapse: collapse;
+  .text-12;
+
+  & td {
+    height: 56px;
+  }
+}
+
+.table__row-header {
+  height: 32px;
+}
+
+.table__col-1 {
+  // width: 370px;
+  text-align: left;
+  padding-left: 93px;
+  background: #f0f0f0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.table__col-2 {
+  width: 55px;
+  background: #f0f0f0;
+  text-align: right;
+}
+
+.table__col-3 {
+  width: 60px;
+  padding-top: 7px;
+  background: #f0f0f0;
+  text-align: right;
+}
+
+.table__col-4 {
+  width: 238px;
+  padding-left: 10px;
+  background: #f0f0f0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: left;
+}
+
+.table__row {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table__ad {
+  display: flex;
+  align-items: center;
+  min-height: 54px;
+}
+
+.table__label {
+  min-width: 60px;
+  min-height: 24px;
+  margin-left: 16px;
+  margin-right: 16px;
+  text-align: center;
+
+  border-radius: 3px;
+  color: @white;
+  line-height: 24px;
+
+  &--sale {
+    background-color: @light-blue;
+  }
+
+  &--buy {
+    background-color: @red;
+  }
+}
+
+.table__text {
+  color: @blue;
+}
+
+.table__date {
+  text-align: right;
+}
+
+.table__view {
+  text-align: right;
+}
+
+.table__date-label {
+  display: none;
+
+  .text-14--bold;
+}
+
+.table__author {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.table__img {
+  margin-right: 10px;
+}
+
+// @media (max-width: 900px) {
+//   .table__row {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+
+//   .table__col-1 {
+//     width: 100%;
+//   }
+// }
+
+
+@media screen and (max-width: 1279px) {
+  .table {
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .table__header {
+    display: none;
+  }
+
+  .table__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .table td {
+    height: auto;
+  }
+
+  .table__ad {
+    min-height: 35px;
+  }
+
+  .table__cell-ad {
+    width: 100%;
+  }
+
+  .table__label {
+    margin-left: 0;
+  }
+
+  .table__date {
+    width: 100px;
+    margin-right: 20px;
+    text-align: left;
+  }
+
+  .table__date-label {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .table__view {
+    width: 70px;
+    margin-right: auto;
+    padding-left: 20px;
+    background-image: url("../img/view.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+
+  .table__author {
+    width: 230px;
+    margin-bottom: 5px;
+    padding-left: 0;
+  }
+}
